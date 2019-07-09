@@ -1,35 +1,39 @@
 <html>
-<body>
+  <head>
+    
+    <link rel='stylesheet' src='../static/css/style.css'>
+  </head>
+  <body>
     <h3>Loan Outcome Prediction Form</h3>
 
-<div>
-  <form action="/result" method="POST">
-    <label for="int_rate">Interest rate</label>
-    <input type="text" id="int_rate" name="int_rate">
-    <br>
-    <label for="loan_amt">Loan amount</label>
-    <input type="text" id="loan_amt" name="loan_amt">
-    <br>
-    <label for="annual_inc">Annual income</label>
-    <input type="text" id="annual_inc" name="annual_inc">
-    <br>
-    <label for="dti">Debt-to-income ratio</label>
-    <input type="text" id="dti" name="dti">
-    <br>
-    <label for="total_acc">Total number of credit lines in credit file</label>
-    <input type="text" id="total_acc" name="total_acc">
-    <br>
-    <label for="open_acc">Interest rate</label>
-    <input type="text" id="open_acc" name="open_acc">
-    <br>
-    <label for="pct_tl_nvr_dlq">Percentage of trades that were never delinquent</label>
-    <input type="text" id="pct_tl_nvr_dlq" name="pct_tl_nvr_dlq">
-    <br>
-    <label for="total_bal_ext_mort">Interest rate</label>
-    <input type="text" id="total_bal_ext_mort" name="total_bal_ext_mort">
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-</body>
+    <div>
+      <form action='/result' method='POST'>
+        <label for="int_rate">Interest rate</label>
+        <input type="text" id="int_rate" name="int_rate">
+        <br>
+        <label for="loan_amt">Loan amount</label>
+        <input type="text" id="loan_amt" name="loan_amt">
+        <br>
+        <label for="annual_inc">Annual income</label>
+        <input type="text" id="annual_inc" name="annual_inc">
+        <br>
+        <label for="dti">Debt-to-income ratio</label>
+        <input type="text" id="dti" name="dti">
+        <br>
+        <label for="total_acc">Total number of credit lines in credit file</label>
+        <input type="text" id="total_acc" name="total_acc">
+        <br>
+        <label for="open_acc">Interest rate</label>
+        <input type="text" id="open_acc" name="open_acc">
+        <br>
+        <label for="pct_tl_nvr_dlq">Percentage of trades that were never delinquent</label>
+        <input type="text" id="pct_tl_nvr_dlq" name="pct_tl_nvr_dlq">
+        <br>
+        <label for="total_bal_ext_mort">Interest rate</label>
+        <input type="text" id="total_bal_ext_mort" name="total_bal_ext_mort">
+        <br>
+        <input type='submit' value='Submit'>
+      </form>
+    </div>
+  </body>
 </html>

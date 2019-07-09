@@ -130,3 +130,8 @@ border-radius: 50px;
     color: #777;
   }
 }
+
+#result_output {
+  font-size: 60pt;
+  background-color: blue
+}
