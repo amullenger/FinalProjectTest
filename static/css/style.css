@@ -21,7 +21,7 @@ h3 { font-family: 'Josefin Sans', sans-serif; font-size: 32px; font-weight: 300;
 img { max-width: 100%; }
 
 .bg-image {
-	background-image: (url('https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'));
+	background-image:url('https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	height:250px;
 	background-position: center;
 	opacity:.5;
@@ -106,7 +106,7 @@ ul.navbar-nav {
 
 /***** Top content *****/
 
-.top-content { padding: 200px 0 150px 0; }
+.top-content { padding: 200px 0 150px 0; background-image: url("https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
 
 .top-content .text { padding-top: 60px; color: #fff; }
 .top-content .text h1 { padding-bottom:200px; color: #fff; }
