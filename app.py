@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import flask
+import sklearn
+from sklearn.preprocessing import StandardScaler
 
 from flask import Flask, render_template, request, jsonify
 
@@ -9,13 +11,21 @@ from tensorflow.keras.models import load_model
 def predict_outcome(loan_info_list):
     # Load model ***
     ml_model = load_model("8Columns_DeepModel8_Trained.h5")
-    pred_data = np.array(loan_info_list).reshape(1, 8)
-    prediction = ml_model.predict_classes(pred_data)
-    return prediction[0]
+    
+    
+    pred_data = pd.DataFrame(loan_info_list)
+    scaler = StandardScaler().fit(pred_data)
+    scaled_data = scaler.transform(pred_data)
+    trans_data = np.array(scaled_data).reshape(1,8)
+    prediction = ml_model.predict_classes(trans_data)
+    return prediction
 def predict_perc(loan_info_list):
         ml_model = load_model("8Columns_DeepModel8_Trained.h5")
-        pred_data = np.array(loan_info_list).reshape(1, 8)
-        percs = ml_model.predict(pred_data)
+        pred_data = pd.DataFrame(loan_info_list)
+        scaler = StandardScaler().fit(pred_data)
+        scaled_data = scaler.transform(pred_data)
+        trans_data = np.array(scaled_data).reshape(1,8)
+        percs = ml_model.predict(trans_data)
         return percs[0][1]
 
 app = Flask(__name__)

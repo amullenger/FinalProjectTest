@@ -109,9 +109,9 @@
 				</div>
 				<div class="row">
 								<p class="col-sm-3 wow fadeInRightBig"></p>
-								<p class = "col-sm-6 wow fadeInRightBig"> While banks are legally required to be unbiased in their lending practices, predatory lending practices are not extinct. 
-									Unfortunately, individuals of lower socio-economic standing are more likely to get behind in their loan repayments. 
-									If there was a quick and straightforward way to predict the outcome of a loan, borrowers might be more likely to avoid risky transactions.</p>
+								<p class = "col-sm-6 wow fadeInRightBig"> While banks are legally required to be unbiased in their lending practices, predatory lending practices still exist. 
+									Unfortunately, individuals of lower socio-economic standing are more likely to be taken advantage of. 
+									If there was a quick and straightforward way to predict the outcome of a loan, borrowers would be better equipped to avoid risky financial decisions.</p>
 								<p class="col-sm-3 wow fadeInRightBig"></p>
 							</div>
 				<div class="row">
@@ -119,7 +119,17 @@
 								<p class = "col-sm-6 wow fadeInRightBig">
 										We have developed a neural network model using TensorFlow in Python that predicts the outcome of a loan (i.e. will you pay it off or default?). 
 										This model is built from data provided by <a href="https://www.lendingclub.com/info/download-data.action">LendingClub.com</a> using over 250,000 data points.
-										We achieved an accuracy of 78%, which, although not perfect, is much better than chance.
+										We achieved an accuracy of 78%, which, although not perfect, is much better than chance. The model only requires 8 inputs, so borrowers can quickly get a sense of 
+										how risky their loan is.
+								</p>
+								<p class="col-sm-3 wow fadeInRightBig"></p>
+				</div>
+				<div class="row">
+					<p class="col-sm-3 wow fadeInRightBig"></p>
+								<p class = "col-sm-6 wow fadeInRightBig">
+										In addition to a simple prediction for a loan's outcome, we have assigned each loan a grade based on the likelihood of it being paid off. This allows the borrower to 
+										gauge exactly how risky their loan is, according to our model.
+
 								</p>
 								<p class="col-sm-3 wow fadeInRightBig"></p>
 				</div>								
@@ -153,7 +163,7 @@
 
 							<div class="form-label-group">
 								<input type="text" id="int_rate" class="form-control" name="int_rate" placeholder="Client ID" required autofocus>
-								<label for="int_rate">Interest Rate</label>
+								<label for="int_rate">Interest Rate (e.g. 0.1 for 10%)</label>
 							</div>
 				
 							<div class="form-label-group">
@@ -173,17 +183,17 @@
 
 							<div class="form-label-group">
 								<input type="text" id="total_acc" class="form-control" placeholder="Total # of Credit Lines in Credit File" name="total_acc" required autofocus>
-								<label for="total_acc">Total # of Credit Lines in Credit File</label>
+								<label for="total_acc">Total Number of Credit Lines in Credit File</label>
 							</div>
 
 							<div class="form-label-group">
 								<input type="text" id="open_acc" class="form-control" placeholder="Interest Rate" name="open_acc" required autofocus>
-								<label for="open_acc">Interest Rate</label>
+								<label for="open_acc">Number of Open Accounts in Credit File</label>
 							</div>
 
 							<div class="form-label-group">
 								<input type="text" id="pct_tl_nvr_dlq" class="form-control" placeholder="% of Trades that were Never Delinquent" name="pct_tl_nvr_dlq" required autofocus>
-								<label for="pct_tl_nvr_dlq">% of Trades that were Never Delinquent</label>
+								<label for="pct_tl_nvr_dlq">% of Trades that were Never Delinquent (e.g. 10 for 10%)</label>
 							</div>
 
 							<div class="form-label-group">
