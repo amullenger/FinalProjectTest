@@ -12,7 +12,11 @@ def predict_outcome(loan_info_list):
     pred_data = np.array(loan_info_list).reshape(1, 8)
     prediction = ml_model.predict_classes(pred_data)
     return prediction[0]
-
+def predict_perc(loan_info_list):
+        ml_model = load_model("8Columns_DeepModel8_Trained.h5")
+        pred_data = np.array(loan_info_list).reshape(1, 8)
+        percs = ml_model.predict(pred_data)
+        return percs[0][1]
 
 app = Flask(__name__)
 
@@ -30,13 +34,26 @@ def generate_prediction():
                 res_list_mapped = list(map(float, res_list))
 
                 pred = predict_outcome(res_list_mapped)
+                perc_paid = predict_perc(res_list_mapped)
+                perc_paid_scaled = np.round(perc_paid*100, 1)
+
+                if perc_paid >= 0.8:
+                        grade = "A"
+                elif perc_paid < 0.8 and perc_paid >= 0.7:
+                        grade = "B"
+                elif perc_paid < 0.7 and perc_paid >= 0.6:
+                        grade = "C"
+                elif perc_paid < 0.6 and perc_paid >=0.5:
+                        grade = "D"
+                else:
+                        grade = "F"
 
                 if pred == 0:
-                        return render_template("result.html", result = "Our model predicts that you will default on your loan!")
+                        return render_template("result.html", result = "Our model predicts that you will default on your loan.", grade = grade, perc_paid = perc_paid_scaled)
                 else:
-                        return render_template("result.html", result = "Our model predicts that you will pay off your loan.")
+                        return render_template("result.html", result = "Our model predicts that you will pay off your loan!", grade = grade, perc_paid = perc_paid_scaled)
 
-                return render_template("result.html", result = pred)
+                
 
 @app.route("/bio")
 def load_bio():
