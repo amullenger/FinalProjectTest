@@ -32,11 +32,15 @@ def generate_prediction():
                 pred = predict_outcome(res_list_mapped)
 
                 if pred == 0:
-                        return render_template("result.html", result = "Our model predicts that you will default on your loan")
+                        return render_template("result.html", result = "Our model predicts that you will default on your loan!")
                 else:
-                        return render_template("result.html", result = "Our model predicts that you will pay off your loan")
+                        return render_template("result.html", result = "Our model predicts that you will pay off your loan.")
 
                 return render_template("result.html", result = pred)
+
+@app.route("/bio")
+def load_bio():
+        return render_template("bios3.html")
   
 
        

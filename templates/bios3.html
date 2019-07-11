@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Bios</title>
+    
+
+    
+
+   <!--
+
+   
+    <style>
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+-->
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+    </style>
+    
+     <!-- CSS -->        
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+    <link rel='stylesheet' href='../static/css/style.css'>
+    <link rel='stylesheet' href='../static/css/animate.css'>
+    <link rel='stylesheet' href='../static/css/style1.css'>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button> -->
+					<a class="navbar-brand" href="/index"></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-left">						
+						<li><a class="btn btn-link-3" href="/index">Predictor</a></li>
+						<li><a href="/bio">Group Bio</a></li>
+					</ul>
+				</div>
+			</div>
+    </nav>
+    <div class="divider-1"></div>
+    <div class="divider-1"></div>
+    <div class="divider-1"></div>
+
+
+    <h2>Meet Our Team</h2>
+    <!-- <p>Resize the browser window to see the effect.</p> -->
+    <br>
+    <div class="container">
+        <div class="row">
+              <!-- Team Member 1 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow" style="padding-bottom:3%">
+                <img src="{{ url_for('static', filename='images/PD.jpg') }}" class="card-img-top" alt="Preeya" style="width:300px; height:300px; padding-top:3%;">
+                <div class="card-body text-center" style="padding-bottom:1%;">
+                <h3>Preeya Dahya</h3>
+                <p><strong>Age:</strong> 24</p>
+                <p><strong>Education:</strong> BA in Biology</p>
+                <p><strong>Interests:</strong> Coding, cooking, puppies, hiking</p>
+                <p><strong>Favorite Drink:</strong> Whiskey on the rocks</p>
+                <p><strong>Email:</strong> preeyadahya1@gmail.com</p>
+                </div>
+            </div>
+            </div>
+              <!-- Team Member 2 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow" style="padding-bottom:3%">
+                    <img src="{{ url_for('static', filename='images/AM.jpg') }}" class="card-img-top" alt="Andrew" style="width:300px; height:300px; padding-top:3%;">
+                    <div class="card-body text-center" style="padding-bottom:1%;">
+                    <h3>Andrew Mullenger</h3>
+                    <p><strong>Age:</strong> 24</p>
+                    <p><strong>Education:</strong> BA in Business Administration</p>
+                    <p><strong>Interests:</strong> Hiking, mechanical keyboards, movies</p>
+                    <p><strong>Favorite Drink:</strong> Gin and tonic</p>
+                    <p><strong>Email:</strong> amullenger@wustl.edu</p>
+                    </div>
+                </div>
+                </div>
+              <!-- Team Member 3 -->
+            </div>
+            <div class="divider-1"></div>
+            <div class="row">
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow" style="padding-bottom:3%">
+                    <img src="{{ url_for('static', filename='images/PM.jpg') }}" class="card-img-top" alt="Peter" style="width:300px; height:300px; padding-top:3%;">
+                    <div class="card-body text-center" style="padding-bottom:1%;">
+                    <h3>Preeya</h3>
+                    <p><strong>Age:</strong> 33</p>
+                    <p><strong>Education:</strong> PhD in Movement Science</p>
+                    <p><strong>Interests:</strong> Baking, running, napping</p>
+                    <p><strong>Favorite Drink:</strong> Old fashioned</p>
+                    <p><strong>Email:</strong> perersmyers@wustl.edu</p>
+                    </div>
+                </div>
+                </div>
+              <!-- Team Member 4 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow" style="padding-bottom:3%">
+                  <img src="{{ url_for('static', filename='images/SS.jpg') }}" class="card-img-top" alt="Stephen" style="width:300px; height:300px; padding-top:3%;">
+                  <div class="card-body text-center" style="padding-bottom:1%;">
+                    <h3>Stephen Seyer</h3>
+                    <p><strong>Age:</strong> 26</p>
+                    <p><strong>Education:</strong> BS in Network Securities</p>
+                    <p><strong>Interests:</strong> Guitar, cooking, egg washing his hair</p>
+                    <p><strong>Favorite Drink:</strong> Negroni, on the rocks, with an orange twist</p>
+                    <p><strong>Email:</strong> sseyer229@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider-1"></div>
+
+
+
+
+
+
+
+<!--
+
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/PD.jpg') }}" alt="Preeya" style="width:100%; height:100%">
+                <div class="container" style="float:left">
+                    <h2>Preeya Dahya</h2>
+                    <p><strong>Age:</strong> 24</p>
+                    <p><strong>Education:</strong> BA in Biology</p>
+                    <p><strong>Interests:</strong> Coding; Cooking; Puppies; Hiking</p>
+                    <p><strong>Favorite Drink:</strong> Whiskey on the rocks</p>
+                    <p><strong>Email:</strong> preeyadahya1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/AM.jpg') }}" alt="Andrew" style="width:100%; height:100%"">
+                <div class="container">
+                    <h2>Andrew Mullenger</h2>
+                    <p><strong>Age:</strong> 24</p>
+                    <p><strong>Education:</strong> BS in Business Administration</p>
+                    <p><strong>Interests:</strong> Mechanical keyboards; Hiking; Movies</p>
+                    <p><strong>Favorite Drink:</strong> Gin and Tonic</p>
+                    <p><strong>Email:</strong> amullenger@wustl.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/PM.jpg') }}" alt="Peter" style="width:100%; height:100%"">
+                <div class="container">
+                    <h2>Peter Myers</h2>
+                    <p><strong>Age:</strong> 33</p>
+                    <p><strong>Education:</strong> PhD in Movement Science</p>
+                    <p><strong>Interests:</strong> Baking; Running; Napping</p>
+                    <p><strong>Favorite Drink:</strong> Old Fashioned</p>
+                    <p><strong>Email:</strong> petersmyers@wustl.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/SS.jpg') }}" alt="Stephen" style="width:100%; height:100%"">
+                <div class="container">
+                    <h2>Stephen Seyer</h2>
+                    <p><strong>Age:</strong> 26</p>
+                    <p><strong>Education:</strong> BS in Network Securities</p>
+                    <p><strong>Interests:</strong> Guitar; Cooking; Egg washing his hair</p>
+                    <p><strong>Favorite Drink:</strong> Negroi, on the rocks, with a twist orange</p>
+                    <p><strong>Email:</strong> sseyer229@gmail.com</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+</body>
+
+</html>

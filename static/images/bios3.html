@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <a class="navbar-brand" href="index.html">b Navbar Menu Template</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Group Bio</a></li>
+                    <li><a class="btn btn-link-3" href="#">Predictor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Top content -->
+    <div class="top-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text wow fadeInLeftBig">
+                    <h1 style="color:rgb(0, 0, 0);margin-bottom:0px;padding-top:75px;">Loan Default Predictor</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h2>Meet Our Team</h2>
+    <!-- <p>Resize the browser window to see the effect.</p> -->
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="PD.jpg" alt="Preeya" style="width:100%">
+                <div class="container">
+                    <h2>Preeya Dahya</h2>
+                    <p><strong>Age:</strong> 24</p>
+                    <p><strong>Education:</strong> BA in Biology</p>
+                    <p><strong>Interests:</strong> Coding; Cooking; Puppies; Hiking</p>
+                    <p><strong>Favorite Drink:</strong> Whiskey on the rocks</p>
+                    <p><strong>Email:</strong> preeyadahya1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="AM.jpg" alt="Andrew" style="width:100%">
+                <div class="container">
+                    <h2>Andrew Mullenger</h2>
+                    <p><strong>Age:</strong> 24</p>
+                    <p><strong>Education:</strong> BS in Business Administration</p>
+                    <p><strong>Interests:</strong> Mechanical keyboards; Hiking; Movies</p>
+                    <p><strong>Favorite Drink:</strong> Gin and Tonic</p>
+                    <p><strong>Email:</strong> amullenger@wustl.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="PM.JPG" alt="Peter" style="width:100%">
+                <div class="container">
+                    <h2>Peter Myers</h2>
+                    <p><strong>Age:</strong> 33</p>
+                    <p><strong>Education:</strong> PhD in Movement Science</p>
+                    <p><strong>Interests:</strong> Baking; Running; Napping</p>
+                    <p><strong>Favorite Drink:</strong> Old Fashioned</p>
+                    <p><strong>Email:</strong> petersmyers@wustl.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="SS.jpg" alt="Stephen" style="width:100%">
+                <div class="container">
+                    <h2>Stephen Seyer</h2>
+                    <p><strong>Age:</strong> 26</p>
+                    <p><strong>Education:</strong> BS in Network Securities</p>
+                    <p><strong>Interests:</strong> Guitar; Cooking; Egg washing his hair</p>
+                    <p><strong>Favorite Drink:</strong> Negroi, on the rocks, with a twist orange</p>
+                    <p><strong>Email:</strong> sseyer229@gmail.com</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

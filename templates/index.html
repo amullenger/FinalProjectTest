@@ -44,15 +44,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button> -->
-					<a class="navbar-brand" href="index.html"></a>
+					<a class="navbar-brand" href="/index"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Documentation</a></li>
-						<li><a href="#">Plans</a></li>
-						<li><a href="#">Group Bio</a></li>
-						<li><a class="btn btn-link-3" href="#">Predictor</a></li>
+					<ul class="nav navbar-nav navbar-left">						
+						<li><a class="btn btn-link-3" href="/index">Predictor</a></li>
+						<li><a href="/bio">Group Bio</a></li>
 					</ul>
 				</div>
 			</div>
@@ -61,8 +59,8 @@
 		<!-- Top content -->
         <!-- <div class="top-content"> -->
 		<div class= "containerer">
-			<img class="img-fluid" src="{{ url_for('static', filename='images/1.jpg') }}" alt="" style="width:100%;">
-			<h1 class="centereder" style="color:rgb(0, 0, 0);margin-bottom:0px;padding: 70px;" >Loan Default Predictor</h1>
+			<img class="img-fluid" src="{{ url_for('static', filename='images/1.jpg') }}" alt="" style="width:100%; opacity:0.5;">
+			<h1 class="centereder" style="color:rgb(0, 0, 0);margin-bottom:0px;padding: 70px; border:5px black;">Loan Outcome Predictor</h1>
 		</div>
 			</div>
         	<div class="container">
@@ -82,12 +80,12 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-12 features section-description wow fadeIn" style="margin-top:0px">
-	                    <h2 style="font-size:30px">Life is full of risks and chances... Lets not make paying off loans one.</h2>
+	                    <h2 style="font-size:30px">Life is full of risks and chances... Let's not make paying off loans one of them.</h2>
 						<div class="divider-1"><div class="line"></div></div>
 						<div class="divider-1"></div>
 						<div class="divider-1"></div>
 						<div class="divider-1"></div>
-						<div class="divider-1"></div>
+						
 
 						
 	                </div>
@@ -95,21 +93,43 @@
 				
 				
 				<div class="row">
-								<div class="col-sm-4 wow fadeInRightBig">
-									<h3 style="color:rgb(152, 147, 147);font-size:75px">About</h3>
+								<div class="col-sm-12 wow fadeInRightBig">
+									<h1 style="color:rgb(152, 147, 147);">About</h1>
 									
 								</div>
-								<h4 class="col-sm-6 wow fadeInRightBig">Congratulations on receiving a loan</h4>
-								<p class="col-sm-6 wow fadeInRightBig">	Now you have the pleasure of paying if off :( <p>
-								<div class = "col-sm-4 wow fadeInRightBig"></div>
-								<p class = "col-sm-6 wow fadeInRightBig"> While banks are legally required to be unbiased in their lending practices, predatory lending practices are not extinct. Unfortunately, individuals of lower socio-economic standing are more likely to get behind in their loan repayments. </p>
-								<div class = "col-sm-4 wow fadeInRightBig"></div>
-								<p class = "col-sm-6 wow fadeInRightBig">
-										We have developed a neural network model using TensorFlow in Python that predicts the outcome of a loan (i.e. will you pay it off or default?). This model is built from data provided by <a href="https://www.lendingclub.com/info/download-data.action">LendingClub.com</a> using over 250,000 data points.
-									</p>
+				</div>
+				<div class="divider-1"></div>
+				<div class="row">
+								<h4 class="col-sm-12 wow fadeInRightBig">Congratulations on receiving a loan</h4>
+				</div>
+				<div class="row">
+								<p class="col-sm-12 wow fadeInRightBig">	Now you have the pleasure of paying if off :( <p>
+				</div>
+				<div class="divider-1"></div>			
+				</div>
+				<div class="row">
+								<p class="col-sm-3 wow fadeInRightBig"></p>
+								<p class = "col-sm-6 wow fadeInRightBig"> While banks are legally required to be unbiased in their lending practices, predatory lending practices are not extinct. 
+									Unfortunately, individuals of lower socio-economic standing are more likely to get behind in their loan repayments. 
+									If there was a quick and straightforward way to predict the outcome of a loan, borrowers might be more likely to avoid risky transactions.</p>
+								<p class="col-sm-3 wow fadeInRightBig"></p>
 							</div>
-						</div>
-						<div class="divider-1"></div>
+				<div class="row">
+								<p class="col-sm-3 wow fadeInRightBig"></p>
+								<p class = "col-sm-6 wow fadeInRightBig">
+										We have developed a neural network model using TensorFlow in Python that predicts the outcome of a loan (i.e. will you pay it off or default?). 
+										This model is built from data provided by <a href="https://www.lendingclub.com/info/download-data.action">LendingClub.com</a> using over 250,000 data points.
+										We achieved an accuracy of 78%, which, although not perfect, is much better than chance.
+								</p>
+								<p class="col-sm-3 wow fadeInRightBig"></p>
+				</div>								
+								
+				
+			</div>
+			<div class="divider-1"></div>
+			<div class="divider-1"></div>
+			<div class="divider-1"></div>
+			<div class="divider-1"></div>
 						
 						
 						
@@ -117,16 +137,16 @@
 
 
 		<!-- Picking stuff  -->
-		<div class="container wow slideInUp">
+		<div class="container" wow slideInUp>
 				<div class="row">
 				<div class="col-md-2"></div>
 				  <div class="col-md-5 ">
 					 <div class="card card-signin"> 
 					  <div class="card-body"> 
-						<h1 style="font-size:70px" >Lets Test it Out</h1>
+						<h2>Lets Test it Out</h2>
 
 						<div class="divider-1"></div>
-						<div class="divider-1"></div>
+						
 
 						<!-- <form class="form-signin"> -->
 						<form action='/result' method='POST'>
@@ -168,7 +188,7 @@
 
 							<div class="form-label-group">
 								<input type="text" id="total_bal_ext_mort" class="form-control" placeholder="Interest Rate" name="total_bal_ext_mort" required autofocus>
-								<label for="total_bal_ext_mort">Total debt balance excluding mortgage</label>
+								<label for="total_bal_ext_mort">Total Debt Balance Excluding Mortgage</label>
 							</div>
 
 
