@@ -21,11 +21,23 @@ h3 { font-family: 'Josefin Sans', sans-serif; font-size: 32px; font-weight: 300;
 img { max-width: 100%; }
 
 .bg-image {
-	background-image:url('https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-image:url("{{ url_for('static', filename='images/1.jpg') }}");
 	height:250px;
 	background-position: center;
 	opacity:.5;
 }
+.containerer {
+	position: relative;
+	text-align: center;
+	color: white;}
+
+/* Centered text */
+.centereder {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
 
 .grey {color: rgb(21, 19, 19);}
 
